@@ -38,23 +38,29 @@
     font-style: normal;
 }
 
-body {
-	margin: 0 auto;
-	width: 1366px;
+html, body {
+    width: 1366px;
+    margin: 0 auto;
 }
 
 header {
     width: 100%;
-	height: 658px;
+	height: 692px;
 	float: left;
     position: relative;
     margin-top: 0; 
-    /* не получается радиальный градиент сделать */
-    /* background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 99.48%, #B80027 99.03%); */
+    
+    /* рабочий прототип */
+    /* background: radial-gradient(circle at 16.03% 39.06%, #003D85 110.53%, #B80027 38%); */
+
+    /* эксперименты */
+    /* background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 110.53%, #B80027 88.38%); */
+    /* background: radial-gradient(at 0% 30%, red 10px, #1e90ff 50%); */
     background-image: url('./bg/Rectangle.png');
+    /* Колорстоп задаёт то место, где будет располагаться центральная (самая насыщенная) часть цвета. */
 }   
 
-.logo {
+.logo { /* надпись supergym */
     position: absolute;
     width: 89px;
     height: 20px;
@@ -64,11 +70,10 @@ header {
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.02em;
-
     color: #FFFFFF;
 }
 
-.city {
+.city { /* город омск */
     position: absolute;
     width: 90px;
     height: 37px;
@@ -79,11 +84,10 @@ header {
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
 }
 
-.big_name {
+.big_name { /* надпись фитнес центр */
     position: absolute;
     width: 298px;
     height: 191px;
@@ -96,17 +100,14 @@ header {
     text-align: right;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    text-align: right;
 }
 
-.phone a {
-    /* 8-800-555-55-55 */
+.phone a { /* 8-800-555-55-55 */
     position: absolute;
     width: 154px;
     height: 20px;
     left: 1109px;
     top: 30px;
-
     font-family: 'Bebas Neue';
     font-size: 26px;
     line-height: 26px;
@@ -115,7 +116,7 @@ header {
     text-decoration: none;
 }
 
-.fitnes_links{
+.fitness_links { /* надписи тз, гз, кз */
     position: absolute;
     width: 113px;
     height: 51px;
@@ -128,14 +129,17 @@ header {
     align-items: center;
     text-align: right;
     color: #FFFFFF;
-    border: 1px solid black;
 }
 
-li {
+.fitness_links_ul {
+    padding: 0;
+}
+
+.fitness_links_li {
     list-style: none;
 }
 
-.title_photo {
+.title_photo { /* в header фото с мужчиной */
     position: absolute;
     width: 500px;
     height: 556px;
@@ -149,17 +153,7 @@ li {
     /* border: 1px solid black; */
 }
 
-footer{
-    position: absolute;
-    width: 1366px;
-    height: 108px;
-    left: 0px;
-    top: 5781px;
-    background: #030A1A;
-    position: relative;
-}
-
-.social_links {
+.social_links { /* ссылки на вк, фб и иг */
     position: absolute;
     /* width: 13px;
     height: 9px; */
@@ -175,11 +169,20 @@ footer{
     color: #FFFFFF;
 }
 
+.social_links li {
+    list-style: none;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .social_links > ul {
     padding: 0;
 }
 
-.buy_membership {
+.buy_membership { /* кнопка купить абонемент */
     position: absolute;
     width: 230px;
     height: 57px;
@@ -211,6 +214,57 @@ footer{
     margin-left: 57px;
 }
 
+/* тут пойдет main */
+/* .gym {
+    width: auto;
+    height: 722px;
+    margin-top: 692px;
+} */
+
+/* .description_gym {
+    position: absolute;
+    width: 355px;
+    height: 314px;
+    left: 163px;
+    top: 827px;
+} */
+
+/* .description_gym > h1 {
+    position: absolute;
+    width: 323px;
+    height: 37px;
+    left: 163px;
+    top: 827px;
+    
+    font-family: 'Bebas Neue';
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    
+    color: #102654;
+} */
+
+/* .membership { 
+    position: absolute;
+    width: 1366px;
+    height: 851px;
+    left: 0px;
+    top: 1414px;
+    background: #F8F9FC;
+} 
+
+
+/* footer */
+footer{
+    position: absolute;
+    width: 1366px;
+    height: 108px;
+    left: 0px;
+    top: 5781px;
+    background: #030A1A;
+    position: relative;
+}
+
 #letter_vk {
     margin-top: 24px;
 }
@@ -218,3 +272,8 @@ footer{
 #letter_ig {
     margin-top: 24px;
 }
+
+.social_links_icon {
+    display: block;
+}
+
