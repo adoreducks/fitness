@@ -2,7 +2,7 @@
     font-family: 'Bebas Neue Bold';
     src: url('./fonts/BebasNeue-Bold.woff2') format('woff2'),
          url('./fonts/BebasNeue-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -38,35 +38,41 @@
     font-style: normal;
 }
 
-html, body {
+html, body, main, footer {
     width: 1366px;
     margin: 0 auto;
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header */
 header {
     width: 100%;
 	height: 692px;
 	float: left;
     position: relative;
     margin-top: 0; 
-    
+    display: flex;
     /* рабочий прототип */
-    /* background: radial-gradient(circle at 16.03% 39.06%, #003D85 110.53%, #B80027 38%); */
-
+    background-image: url('./bg/Rectangle.png');
     /* эксперименты */
     /* background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 110.53%, #B80027 88.38%); */
     /* background: radial-gradient(at 0% 30%, red 10px, #1e90ff 50%); */
-    background-image: url('./bg/Rectangle.png');
+    /* background: radial-gradient(circle at 16.03% 39.06%, #003D85 110.53%, #B80027 38%); */
     /* Колорстоп задаёт то место, где будет располагаться центральная (самая насыщенная) часть цвета. */
 }   
 
 .logo { /* надпись supergym */
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 89px;
     height: 20px;
     left: 103px;
     top: 30px;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', Georgia, serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.02em;
@@ -79,8 +85,7 @@ header {
     height: 37px;
     left: 409px;
     top: 172px;
-    text-transform: capitalize;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', Georgia, serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
@@ -93,8 +98,7 @@ header {
     height: 191px;
     left: 201px;
     top: 234px;
-    text-transform: capitalize;
-    font-family: 'Bebas Neue Bold', bold;
+    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
     font-size: 109px;
     line-height: 109px;
     text-align: right;
@@ -108,7 +112,7 @@ header {
     height: 20px;
     left: 1109px;
     top: 30px;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', Georgia, serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.03em;
@@ -122,7 +126,7 @@ header {
     height: 51px;
     left: 122px;
     top: 362px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', Georgia, serif;
     font-size: 14px;
     line-height: 150%;
     display: flex;
@@ -159,7 +163,7 @@ header {
     height: 9px; */
     left: 1250px;
     top: 487px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', Georgia, serif;
     font-size: 12px;
     line-height: 14px;
     display: flex;
@@ -214,35 +218,83 @@ header {
     margin-left: 57px;
 }
 
-/* тут пойдет main */
-/* .gym {
+/* main */
+main {
+    display: block;
+}
+
+.gym {
     width: auto;
     height: 722px;
-    margin-top: 692px;
-} */
+    border: 1px solid black;
+    display: flexbox;
+}
 
-/* .description_gym {
-    position: absolute;
+.description_gym {
+    position: relative;
     width: 355px;
     height: 314px;
     left: 163px;
-    top: 827px;
-} */
+    top: 135px;    /* почему блок отступает не от предыдущегно блока сверху?  */
+}
 
-/* .description_gym > h1 {
-    position: absolute;
+.description_gym > h1 {
     width: 323px;
     height: 37px;
     left: 163px;
     top: 827px;
-    
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', Georgia, serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
+    color: #102654;
+    margin: 0;
     
+}
+
+.description_gym > h2 {
+    width: 279px;
+    height: 11px;
+    left: 163px;
+    top: 889px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #102654;
+}
+
+/* .description_gym > p {
+    width: 355px;
+    height: 186px;
+    left: 163px;
+    top: 955px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
     color: #102654;
 } */
+
+.description_gym_img {
+    display: block;
+    position: relative;
+    width: 660px;
+    height: 401px;
+    left: 85px;
+    top: 86px;
+    background: url(./img/description_gym_img.jpg);
+}
+
+
+
+
 
 /* .membership { 
     position: absolute;
@@ -254,9 +306,54 @@ header {
 } 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 footer{
-    position: absolute;
     width: 1366px;
     height: 108px;
     left: 0px;
