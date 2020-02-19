@@ -1,0 +1,313 @@
+.big_name { /* надпись фитнес центр */
+    width: 298px;
+    height: 191px;
+    left: 201px;
+    top: 234px;
+    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+
+.fitness_links { /* надписи тз, гз, кз */
+    width: 113px;
+    height: 51px;
+    left: 122px;
+    top: 362px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.fitness_links_ul {
+    padding: 0;
+}
+
+.fitness_links_li {
+    list-style: none;
+}
+
+.title_photo { /* в header фото с мужчиной */
+    width: 500px;
+    height: 556px;
+    left: 563px;
+    top: 51px;
+}
+
+.title_photo > img {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.social_links { /* ссылки на вк, фб и иг */
+    /* width: 13px;
+    height: 9px; */
+    left: 1250px;
+    top: 487px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social_links li {
+    list-style: none;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social_links > ul {
+    padding: 0;
+}
+
+.buy_membership { /* кнопка купить абонемент */
+    width: 230px;
+    height: 57px;
+    left: 268px;
+    top: 505px;
+    border: 4px solid #FFFFFF;
+}
+
+.buy_membership > a {
+    width: 230px;
+    height: 57px;
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.buy_membership > a > p {
+    margin-left: 57px;
+}
+
+/* main */
+main {
+    display: block;
+}
+
+.gym {
+    width: auto;
+    height: 722px;
+    display: flexbox;
+}
+
+.description_gym {
+    display: block; 
+    float: left;
+    width: 355px;
+    height: 314px;
+    margin: 135px 0 0 163px;/* почему блок отступает не от предыдущегно блока сверху?  */
+}
+
+.description_gym > h2 {
+    width: 323px;
+    height: 37px;
+    left: 163px;
+    top: 827px;
+    font-family: 'Bebas Neue', Georgia, serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin: 0;
+    
+}
+
+.description_gym > h3 {
+    width: 279px;
+    height: 11px;
+    left: 163px;
+    top: 889px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #102654;
+}
+
+/* .description_gym > p {
+    width: 355px;
+    height: 186px;
+    left: 163px;
+    top: 955px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #102654;
+} */
+
+.description_gym_img {
+    display: block;
+    float: right;
+    width: 660px;
+    height: 401px;
+    margin: 86px 103px 0 0;
+    background: url(./img/description_gym_img.jpg);
+}
+
+.description_gym_vid {
+    background: url(./img/description_gym_video.png);
+    width: 364px;
+    height: 228px;
+    display: block;
+    clear: both;
+    margin: 374px 0 0 540px;
+}
+
+.description_gym_vid_bg {
+    background: rgba(20, 54, 122, 0.5);
+    width: 364px;
+    height: 228px;
+    display: block;
+    clear: both;
+    margin: 374px 0 0 540px;
+}
+
+.description_gym_vid_play {
+    background: url(./icon/play_vid.png);
+    width: 100px;
+    height: 100px;  
+    display: block;
+    clear: both;
+    margin: 438px 0 0 672px;
+}
+
+
+
+.membership {
+    display: flexbox;
+    width: auto;
+    height: 851px;
+    left: 0px;
+    top: 1414px;
+    background: #F8F9FC;
+    border: 1px solid black;
+} 
+
+.membership_p > h2 {
+    width: 323px;
+    height: 37px;
+    font-family: 'Bebas Neue', Georgia, serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin: 120px auto 0;
+}
+
+.membership_list > ul {    /* ничего не сделано */
+    display: inline-block;
+    list-style: disc;
+    clear: both;
+    margin: 210px auto 0;
+
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-size: 20px;
+    line-height: 150%;
+
+    
+    align-items: center;
+
+    color: #102654;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    width: 1366px;
+    height: 108px;
+    left: 0px;
+    top: 5781px;
+    background: #030A1A;
+    position: relative;
+}
+
+#letter_vk {
+    margin-top: 24px;
+}
+
+#letter_ig {
+    margin-top: 24px;
+}
+
+.social_links_icon {
+    display: block;
+}
+
