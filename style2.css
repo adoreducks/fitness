@@ -1,16 +1,3 @@
-.big_name { /* надпись фитнес центр */
-    width: 298px;
-    height: 191px;
-    left: 201px;
-    top: 234px;
-    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
-    font-size: 109px;
-    line-height: 109px;
-    text-align: right;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
 
 .fitness_links { /* надписи тз, гз, кз */
     width: 113px;
@@ -34,46 +21,11 @@
     list-style: none;
 }
 
-.title_photo { /* в header фото с мужчиной */
-    width: 500px;
-    height: 556px;
-    left: 563px;
-    top: 51px;
-}
 
-.title_photo > img {
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid black; */
-}
 
-.social_links { /* ссылки на вк, фб и иг */
-    /* width: 13px;
-    height: 9px; */
-    left: 1250px;
-    top: 487px;
-    font-family: 'Roboto Condensed', Georgia, serif;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 
-.social_links li {
-    list-style: none;
-}
 
-.social_links a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
 
-.social_links > ul {
-    padding: 0;
-}
 
 .buy_membership { /* кнопка купить абонемент */
     width: 230px;

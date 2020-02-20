@@ -61,17 +61,14 @@ header {
     background-image: radial-gradient(circle at bottom left,#003D85 0%,#B80027 100%); 
 }   
 
+/* ВЕРХНЯЯ ЛИНИЯ В HEADER */
 .header_top-line {
     width: 1366px;
     height: 51px;
     margin: 0 auto 0;
+    outline: 1px solid black;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 .logo { /* надпись supergym */
     width: 89px;
     height: 20px;
@@ -96,23 +93,101 @@ header {
     text-decoration: none;
     float: right;
 }
-  
+
+/* БОЛЬШОЙ БЛОК ПОД ВЕРХНЕЙ ЛИНИЕЙ В HEADER */
+.header_main {
+    width: 100%;
+    height: 556px;
+    display: flex;
+}
+
+/* ЛЕВЫЙ БЛОК С ТЕКСТАМИ В HEADER_MAIN */
 .header_left {
     display: block;
-    margin-top: 51px;
     float: left;
     width: 563px;
     height: 556px;
+    outline: 1px solid black;
 }
 
 .city { /* город омск */
     width: 90px;
     height: 37px;
-    margin-top: 121px;
-    margin-left: 409px;    /* почему не работает */
+    float: right;
+    /* margin-top: 122px;
+    margin-right: 64px; */
     font-family: 'Bebas Neue', Georgia, serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    outline: 1px solid black;
+}
+
+.big_name { /* надпись фитнес центр */
+    width: 298px;
+    height: 191px;
+    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    clear:both;
+    outline: 1px solid black;
+}
+
+/* СРЕДНИЙ БЛОК С ФОТО В HEADER_MAIN */
+.header_mid {
+    width: 500px;
+    height: 556px;
+}
+.title_photo { /* фото с мужчиной */
+    width: 100%;
+    height: 100%;
+    left: 563px;
+    top: 51px;
+}
+
+.title_photo > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* правый БЛОК С ССЫЛКАМИ В HEADER_MAIN */
+.header_right {
+    width: 303px;
+    height: 556px;
+}
+
+.social_links { /* ссылки на вк, фб и иг */
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social_links li {
+    list-style: none;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social_links > ul {
+    padding: 0;
+}
+
+/* ПСТАЯ ЛИНИЯ ПОД HEADER_MAIN */
+.header_bottom-line {
+    margin-bottom: 0;
+    display: block;
+    height: 85px;
+    width: 100%;
 }
