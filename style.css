@@ -2,7 +2,7 @@
     font-family: 'Bebas Neue Bold';
     src: url('./fonts/BebasNeue-Bold.woff2') format('woff2'),
          url('./fonts/BebasNeue-Bold.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -41,7 +41,6 @@
 html, body, main, footer {
     width: 1366px;
     margin: 0 auto;
-    outline: 1px solid black;
 }
 
 body {
@@ -49,7 +48,7 @@ body {
     flex-direction: column;
 }
 
-/* header */
+/* HEADER */
 header {
     width: 100%;
 	height: 692px;
@@ -59,17 +58,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-image: radial-gradient(circle at bottom left,#003D85 0%,#B80027 100%); 
-}   
+}
 
 /* ВЕРХНЯЯ ЛИНИЯ В HEADER */
 .header_top-line {
     width: 1366px;
     height: 51px;
     margin: 0 auto 0;
-    outline: 1px solid black;
 }
 
-.logo { /* надпись supergym */
+/* НАДПИСЬ SUPERGYM */
+.logo { 
     width: 89px;
     height: 20px;
     font-family: 'Bebas Neue', Georgia, serif;
@@ -81,7 +80,8 @@ header {
     float: left;
 }
 
-.phone a { /* 8-800-555-55-55 */
+/* 8-800-555-55-55 */
+.phone a { 
     width: 154px;
     height: 20px;
     margin: 30px 103px 0 0; 
@@ -107,26 +107,36 @@ header {
     float: left;
     width: 563px;
     height: 556px;
-    outline: 1px solid black;
 }
 
-.city { /* город омск */
-    width: 90px;
+.empty_c {
+    width: 100%;
+    height: 122px;
+}
+
+/* ГОРОД ОМСК */
+.city { 
+    width: 100%;
     height: 37px;
-    float: right;
-    /* margin-top: 122px;
-    margin-right: 64px; */
+    text-align: right;
     font-family: 'Bebas Neue', Georgia, serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    outline: 1px solid black;
 }
 
-.big_name { /* надпись фитнес центр */
-    width: 298px;
-    height: 191px;
+/* ПУСТОЙ БЛОК МЕЖДУ CITY И BIG-NAME  */
+.c_empty_bn {
+    width: 100%;
+    height: 25px;
+}
+
+/* НАДПИСЬ ФИТНЕС */
+.big-name-f { 
+    width: 100%;
+    /* height: 191px; */
+    height: auto;
     font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
     font-size: 109px;
     line-height: 109px;
@@ -134,19 +144,104 @@ header {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     clear:both;
-    outline: 1px solid black;
 }
+
+.bnc-and-fl {
+    width: 100%;
+    /* height: 191px; */
+    height: auto;
+}
+
+/* НАДПИСЬ ЦЕНТР */
+.big-name-c { 
+    /* width: 100%;
+    height: 191px; */
+    width: auto;
+    height: 85px;
+    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    float: right;
+    float: right;
+}
+
+/* НАДПИСИ ТЗ, ГЗ, КЗ */
+.fitness_links { 
+    width: 225px;
+    height: 51px;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    font-size: 14px;
+    line-height: 21px;
+    float: right;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    margin-right: 23px;
+}
+
+.fitness_links_ul {
+    padding: 0;
+}
+
+.fitness_links_li {
+    list-style: none;
+}
+
+/* ПУСТОЙ БЛОК */
+.bnc-and-fl_bm {
+    width: 100%;
+    height: 80px;
+    clear: both;
+}
+
+/* КНОПКА КУПИТЬ АБОНЕМЕНТ */
+.buy-membership { 
+    width: 230px;
+    height: 57px;
+    border: 4px solid #FFFFFF;
+    float: right;
+}
+
+.buy-membership > a {
+    width: 230px;
+    height: 57px;
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.buy-membership > a > p {
+    margin-left: 57px;
+}
+
+
+/* ПУСТОЙ БЛОК МЕЖДУ HEADER_LEFT И HEADER_MID  */
+.hl_empty_hm {
+    height: 100%;
+    width: 64px;
+    float: right;
+}
+
 
 /* СРЕДНИЙ БЛОК С ФОТО В HEADER_MAIN */
 .header_mid {
     width: 500px;
     height: 556px;
 }
-.title_photo { /* фото с мужчиной */
+
+/* ФОТО С МУЖЧИНОЙ */
+.title_photo { 
     width: 100%;
     height: 100%;
-    left: 563px;
-    top: 51px;
 }
 
 .title_photo > img {
@@ -154,16 +249,27 @@ header {
     height: 100%;
 }
 
-/* правый БЛОК С ССЫЛКАМИ В HEADER_MAIN */
-.header_right {
-    width: 303px;
-    height: 556px;
+.hm_empty_hr {
+    width: 186px;
+    height: 100%;
 }
 
-.social_links { /* ссылки на вк, фб и иг */
+/* ПРАВЫЙ БЛОК С ССЫЛКАМИ В HEADER_MAIN */
+.header_right {
+    width: auto;
+    height: 100%;
+}
+
+.empty_sl {
+    width: auto;
+    height: 437px;
+}
+
+/* ССЫЛКИ НА ВК, ФБ И ИГ */
+.social_links {
     font-family: 'Roboto Condensed', Georgia, serif;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 24px;
     display: flex;
     align-items: center;
     text-align: right;
@@ -184,10 +290,20 @@ header {
     padding: 0;
 }
 
-/* ПСТАЯ ЛИНИЯ ПОД HEADER_MAIN */
+/* ПУСТОЙ БЛОК СПРАВА ОТ HEADER_RIGHT */
+.hr_empty { 
+    width: 103px;
+    height: 100%;
+    float: right;
+}
+
+/* ПУСТАЯ ЛИНИЯ ПОД HEADER_MAIN */
 .header_bottom-line {
     margin-bottom: 0;
     display: block;
     height: 85px;
     width: 100%;
 }
+
+/*     outline: 1px solid black;
+ */
