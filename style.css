@@ -138,6 +138,7 @@ header {
     /* height: 191px; */
     height: auto;
     font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
+    font-weight: 900;
     font-size: 109px;
     line-height: 109px;
     text-align: right;
@@ -159,6 +160,7 @@ header {
     width: auto;
     height: 85px;
     font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
+    font-weight: bold;
     font-size: 109px;
     line-height: 109px;
     text-align: right;
@@ -305,5 +307,82 @@ header {
     width: 100%;
 }
 
-/*     outline: 1px solid black;
- */
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column; 
+}
+
+.gym {
+    width: 100%;
+    height: 722px;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid black;
+}
+
+.vertical-line_1 {
+    width: 100%;
+    height: 86px;
+}
+
+.vertical-line_2 {
+    width: 100%;
+    height: 516px;
+    display: flex;
+}
+
+.vl2_1 {
+    width: 540px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vl2_1_1 {
+    width: 100%;
+    height: 49px;
+}
+
+.vl2_1_2 {
+    width: 100%;
+    height: 314px;
+    display: flex;
+}
+
+.vl2_1_2_1 {
+    width: 163px;
+    height: 100%;
+}
+
+.vl2_1_2_2 {
+    width: 355px;
+    height: 100%;
+}
+
+.vl2_1_2_3 {
+    width: 22px;
+    height: 100%;
+}
+
+.vl2_1_3 {
+    width: 100%;
+    height: 153px;
+}
+
+.vl2_2 {
+    width: 723px;
+    height: 100%;
+    outline: 1px solid black;
+}
+
+.vl2_3 {
+    width: 103px;
+    height: 100%;
+}
+
+
+.vertical-line_3 {
+    width: 100%;
+    height: 120px;
+}

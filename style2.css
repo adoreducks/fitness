@@ -1,14 +1,3 @@
-/* MAIN */
-main {
-    display: block;
-}
-
-.gym {
-    width: auto;
-    height: 722px;
-    display: flexbox;
-}
-
 .description_gym {
     display: block; 
     float: left;
@@ -97,8 +86,6 @@ main {
     margin: 438px 0 0 672px;
 }
 
-
-
 .membership {
     display: flexbox;
     width: auto;
@@ -125,17 +112,11 @@ main {
     list-style: disc;
     clear: both;
     margin: 210px auto 0;
-
     font-family: 'Roboto Condensed', Georgia, serif;
     font-size: 20px;
     line-height: 150%;
-
-    
     align-items: center;
-
     color: #102654;
-
-
 }
 
 
