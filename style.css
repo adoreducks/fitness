@@ -38,17 +38,17 @@
     font-style: normal;
 }
 
-html, body, main, footer {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
     width: 1366px;
     margin: 0 auto;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* HEADER */
+/* header */
 header {
     width: 100%;
 	height: 692px;
@@ -60,14 +60,65 @@ header {
     background-image: radial-gradient(circle at bottom left,#003D85 0%,#B80027 100%); 
 }
 
-/* ВЕРХНЯЯ ЛИНИЯ В HEADER */
-.header_top-line {
+/* main */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gym {
+    width: 100%;
+    height: 722px;
+    outline: 1px solid black;
+}
+
+.membership {
+    width: 100%;
+    height: 851px;
+    outline: 1px solid black;
+}
+
+.competition_coach {
+    width: 100%;
+    height: 1253px;
+    outline: 1px solid black;
+}   
+
+.advantage {
+    width: 100%;
+    height: 664px;
+    outline: 1px solid black;
+}
+
+.promo_feedback {
+    width: 100%;
+    height: 1263px;
+    outline: 1px solid black;
+}
+
+.other {
+    width: 100%;
+    height: 337px;
+    outline: 1px solid black;
+}
+
+
+/* footer */
+footer{
     width: 1366px;
+    height: 108px;
+    background: #030A1A;
+}
+
+/* top line in header w/ supergym & phone number */
+.header_top-line {
+    width: 100%;
     height: 51px;
     margin: 0 auto 0;
 }
 
-/* НАДПИСЬ SUPERGYM */
+/* SUPERGYM */
 .logo { 
     width: 89px;
     height: 20px;
@@ -94,27 +145,22 @@ header {
     float: right;
 }
 
-/* БОЛЬШОЙ БЛОК ПОД ВЕРХНЕЙ ЛИНИЕЙ В HEADER */
+/* main info in header under top-line */
 .header_main {
     width: 100%;
     height: 556px;
     display: flex;
 }
 
-/* ЛЕВЫЙ БЛОК С ТЕКСТАМИ В HEADER_MAIN */
+/* left block in .header_main */
 .header_left {
     display: block;
     float: left;
-    width: 563px;
-    height: 556px;
+    width: 499px;
+    height: 100%;
 }
 
-.empty_c {
-    width: 100%;
-    height: 122px;
-}
-
-/* ГОРОД ОМСК */
+/* city name */
 .city { 
     width: 100%;
     height: 37px;
@@ -126,14 +172,8 @@ header {
     color: #FFFFFF;
 }
 
-/* ПУСТОЙ БЛОК МЕЖДУ CITY И BIG-NAME  */
-.c_empty_bn {
-    width: 100%;
-    height: 25px;
-}
-
 /* НАДПИСЬ ФИТНЕС */
-.big-name-f { 
+.big-name { 
     width: 100%;
     /* height: 191px; */
     height: auto;
@@ -144,30 +184,6 @@ header {
     text-align: right;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    clear:both;
-}
-
-.bnc-and-fl {
-    width: 100%;
-    /* height: 191px; */
-    height: auto;
-}
-
-/* НАДПИСЬ ЦЕНТР */
-.big-name-c { 
-    /* width: 100%;
-    height: 191px; */
-    width: auto;
-    height: 85px;
-    font-family: 'Bebas Neue Bold', Georgia, bold;/* слетел шрифт и не хочет обратно */
-    font-weight: bold;
-    font-size: 109px;
-    line-height: 109px;
-    text-align: right;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    float: right;
-    float: right;
 }
 
 /* НАДПИСИ ТЗ, ГЗ, КЗ */
@@ -190,13 +206,6 @@ header {
 
 .fitness_links_li {
     list-style: none;
-}
-
-/* ПУСТОЙ БЛОК */
-.bnc-and-fl_bm {
-    width: 100%;
-    height: 80px;
-    clear: both;
 }
 
 /* КНОПКА КУПИТЬ АБОНЕМЕНТ */
@@ -225,15 +234,6 @@ header {
     margin-left: 57px;
 }
 
-
-/* ПУСТОЙ БЛОК МЕЖДУ HEADER_LEFT И HEADER_MID  */
-.hl_empty_hm {
-    height: 100%;
-    width: 64px;
-    float: right;
-}
-
-
 /* СРЕДНИЙ БЛОК С ФОТО В HEADER_MAIN */
 .header_mid {
     width: 500px;
@@ -251,20 +251,10 @@ header {
     height: 100%;
 }
 
-.hm_empty_hr {
-    width: 186px;
-    height: 100%;
-}
-
 /* ПРАВЫЙ БЛОК С ССЫЛКАМИ В HEADER_MAIN */
 .header_right {
     width: auto;
     height: 100%;
-}
-
-.empty_sl {
-    width: auto;
-    height: 437px;
 }
 
 /* ССЫЛКИ НА ВК, ФБ И ИГ */
@@ -290,99 +280,4 @@ header {
 
 .social_links > ul {
     padding: 0;
-}
-
-/* ПУСТОЙ БЛОК СПРАВА ОТ HEADER_RIGHT */
-.hr_empty { 
-    width: 103px;
-    height: 100%;
-    float: right;
-}
-
-/* ПУСТАЯ ЛИНИЯ ПОД HEADER_MAIN */
-.header_bottom-line {
-    margin-bottom: 0;
-    display: block;
-    height: 85px;
-    width: 100%;
-}
-
-/* MAIN */
-main {
-    display: flex;
-    flex-direction: column; 
-}
-
-.gym {
-    width: 100%;
-    height: 722px;
-    display: flex;
-    flex-direction: column;
-    outline: 1px solid black;
-}
-
-.vertical-line_1 {
-    width: 100%;
-    height: 86px;
-}
-
-.vertical-line_2 {
-    width: 100%;
-    height: 516px;
-    display: flex;
-}
-
-.vl2_1 {
-    width: 540px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.vl2_1_1 {
-    width: 100%;
-    height: 49px;
-}
-
-.vl2_1_2 {
-    width: 100%;
-    height: 314px;
-    display: flex;
-}
-
-.vl2_1_2_1 {
-    width: 163px;
-    height: 100%;
-}
-
-.vl2_1_2_2 {
-    width: 355px;
-    height: 100%;
-}
-
-.vl2_1_2_3 {
-    width: 22px;
-    height: 100%;
-}
-
-.vl2_1_3 {
-    width: 100%;
-    height: 153px;
-}
-
-.vl2_2 {
-    width: 723px;
-    height: 100%;
-    outline: 1px solid black;
-}
-
-.vl2_3 {
-    width: 103px;
-    height: 100%;
-}
-
-
-.vertical-line_3 {
-    width: 100%;
-    height: 120px;
 }
